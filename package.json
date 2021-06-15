@@ -2,11 +2,12 @@
     "name": "ethereum-bip44",
     "version": "2.1.4",
     "description": "bip 44 hierarchical deterministic address generation for ethereum",
-    "main": "es5/index.js",
+    "main": "src/index.js",
     "author": "Timon Rapp <timon@zaeda.net>",
+    "type": "module",
     "repository": {
         "type": "git",
-        "url": "https://github.com/trapp/ethereum-bip44.git"
+        "url": "https://github.com/durandal79/ethereum-bip44.git"
     },
     "bugs": {
         "url": "https://github.com/trapp/ethereum-bip44/issues"
@@ -27,7 +28,6 @@
     },
     "files": [
       "README.md",
-      "src/index.js",
-      "es5/index.js"
+      "src/index.js"
     ]
 }
