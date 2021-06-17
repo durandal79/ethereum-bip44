@@ -1,7 +1,9 @@
 import { pubToAddress } from 'ethereumjs-util';
-import { HDPrivateKey, HDPublicKey } from 'bitcore-lib';
+import bitcore from 'bitcore-lib';
+const { HDPrivateKey, HDPublicKey } = bitcore
 import assert from 'assert';
-let ec = require('elliptic').ec('secp256k1');
+import elliptic from 'elliptic'
+let ec = elliptic.ec('secp256k1');
 
 function padTo32(msg) {
   while (msg.length < 32) {
